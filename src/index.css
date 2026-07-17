@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+  @apply bg-ink text-bone antialiased;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Text Selection */
+::selection {
+  background: #3B82F6;
+  color: white;
+}
+
+/*Scrollbar*/
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #3B82F6 #0F172A;
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F172A;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    #60A5FA 0%,
+    #3B82F6 50%,
+    #2563EB 100%
+  );
+  border-radius: 20px;
+  border: 2px solid #0F172A;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    #93C5FD 0%,
+    #60A5FA 50%,
+    #3B82F6 100%
+  );
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+::-webkit-scrollbar-corner {
+  background: #0F172A;
+
+}
+
+/* Background Grid */
+.grid-overlay {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Gradient Text */
+.text-gradient {
+  background: linear-gradient(90deg, #3B82F6, #60A5FA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Buttons */
+.btn-primary {
+  background: #3B82F6;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all .3s ease;
+  box-shadow: 0 10px 30px rgba(59,130,246,.35);
+}
+
+.btn-primary:hover {
+  background: #60A5FA;
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  border: 1px solid #3B82F6;
+  color: #F8FAFC;
+  padding: 14px 30px;
+  border-radius: 12px;
+  transition: all .3s ease;
+}
+
+.btn-outline:hover {
+  background: #3B82F6;
+  color: white;
+}
+
+/* Cards */
+.card {
+  background: #1E293B;
+  border: 1px solid #334155;
+  border-radius: 18px;
+  transition: all .35s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(59,130,246,.20);
+  border-color: #3B82F6;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Links */
+a {
+  transition: .3s;
+}
+
+/* Sections */
+section {
+  position: relative;
+  z-index: 2;
+}
+
+/* Smooth Animation */
+* {
+  transition:
+    background-color .3s ease,
+    color .3s ease,
+    border-color .3s ease;
+}
