@@ -48,11 +48,11 @@ export const projects = [
       "A responsive restaurant ordering platform with menu browsing, shopping cart, order placement, and backend APIs for efficient order management and customer experience.",
 
     stack: [
-      "React.js",
-      "Node.js",
-      "MongoDB",
-      "REST API",
-    ],
+  "C Programming",
+  "Data Structures",
+  "File Handling",
+  "Windows API",
+],
 
     github: "https://github.com/YOUR_GITHUB_USERNAME",
 

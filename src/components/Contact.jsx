@@ -13,9 +13,9 @@ import SectionHeading from "./SectionHeading";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-const SERVICE_ID = "service_ycwaw7m";
-const TEMPLATE_ID = "template_d2sidgv";
-const PUBLIC_KEY = "jCsv8ErADm0Q3vOov";
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 export default function Contact() {
   const [loading, setLoading] = useState(false);

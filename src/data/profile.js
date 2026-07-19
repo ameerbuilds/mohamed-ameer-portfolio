@@ -29,7 +29,7 @@ phone: '+91-9342642958',
   stats: [
     {
       label: 'Projects',
-      value: 8,
+      value: 5,
     },
     {
       label: 'Internships',
@@ -47,12 +47,18 @@ phone: '+91-9342642958',
 
   timeline: [
     {
-      year: '2021 - 2025',
-      title: 'Bachelor of Engineering',
+      year: 'Present',
+      title: 'Job Preparation',
       detail:
-        'Information Science and Engineering, New Horizon College of Engineering, Bengaluru.',
+        'Building production-ready projects, improving React, Node.js, Cloud Computing, problem-solving, and preparing for Software Engineer roles.',
     },
-
+     {
+      year: '2025',
+      title: 'MERN Stack Certification',
+      detail:
+        'Completed Full Stack MERN Development and built multiple real-world projects.',
+    },
+   
     {
       year: '2023',
       title: 'Web Development Intern',
@@ -60,18 +66,15 @@ phone: '+91-9342642958',
         'Motion Cut - Developed responsive web applications and strengthened frontend development skills.',
     },
 
-    {
-      year: '2025',
-      title: 'MERN Stack Certification',
+   
+     {
+      year: '2021 - 2025',
+      title: 'Bachelor of Engineering',
       detail:
-        'Completed Full Stack MERN Development and built multiple real-world projects.',
+        'Information Science and Engineering, New Horizon College of Engineering, Bengaluru.',
     },
 
-    {
-      year: 'Present',
-      title: 'Job Preparation',
-      detail:
-        'Building production-ready projects, improving React, Node.js, Cloud Computing, problem-solving, and preparing for Software Engineer roles.',
-    },
+
+    
   ],
 };
