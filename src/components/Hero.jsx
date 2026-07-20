@@ -30,7 +30,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: .6 }}
+          transition={{ duration: 0.6 }}
         >
 
           <p className="text-acid font-semibold mb-3">
@@ -56,15 +56,18 @@ export default function Hero() {
 
           <div className="flex flex-wrap gap-4 mt-10">
 
+            {/* Resume - Opens in New Tab */}
             <a
               href={profile.resume}
-              download
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 bg-acid text-white px-6 py-3 rounded-xl font-semibold hover:bg-coral transition"
             >
               <HiDownload />
               Resume
             </a>
 
+            {/* Projects */}
             <a
               href="#projects"
               className="border border-line px-6 py-3 rounded-xl hover:bg-panel transition"
@@ -72,9 +75,11 @@ export default function Hero() {
               Projects
             </a>
 
+            {/* WhatsApp */}
             <a
               href={`https://wa.me/${profile.whatsapp}`}
               target="_blank"
+              rel="noopener noreferrer"
               className="border border-line px-6 py-3 rounded-xl hover:bg-panel transition"
             >
               WhatsApp
@@ -106,7 +111,7 @@ export default function Hero() {
             <a
               href={profile.github}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="hover:text-acid transition"
             >
               <FaGithub />
@@ -115,7 +120,7 @@ export default function Hero() {
             <a
               href={profile.linkedin}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="hover:text-acid transition"
             >
               <FaLinkedin />
@@ -131,7 +136,7 @@ export default function Hero() {
             <a
               href={`https://wa.me/${profile.whatsapp}`}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="hover:text-acid transition"
             >
               <FaWhatsapp />
@@ -146,7 +151,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: .6 }}
+          transition={{ duration: 0.6 }}
         >
           <Terminal />
         </motion.div>

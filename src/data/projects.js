@@ -13,10 +13,6 @@ export const projects = [
       "Framer Motion",
       "JavaScript",
     ],
-
-    github: "https://github.com/YOUR_GITHUB_USERNAME",
-
-    live: "https://YOUR_PORTFOLIO_LINK.com",
   },
 
   {
@@ -33,10 +29,6 @@ export const projects = [
       "React.js",
       "Node.js",
     ],
-
-    github: "https://github.com/YOUR_GITHUB_USERNAME",
-
-    live: "#",
   },
 
   {
@@ -45,18 +37,14 @@ export const projects = [
     name: "Online Food Ordering System",
 
     description:
-      "A responsive restaurant ordering platform with menu browsing, shopping cart, order placement, and backend APIs for efficient order management and customer experience.",
+      "A restaurant ordering system developed in C featuring menu management, order processing, inventory tracking, and file-based data storage with a console-based user interface.",
 
     stack: [
-  "C Programming",
-  "Data Structures",
-  "File Handling",
-  "Windows API",
-],
-
-    github: "https://github.com/YOUR_GITHUB_USERNAME",
-
-    live: "#",
+      "C Programming",
+      "Data Structures",
+      "File Handling",
+      "Windows API",
+    ],
   },
 
   {
@@ -73,9 +61,5 @@ export const projects = [
       "Power Query",
       "DAX",
     ],
-
-    github: "#",
-
-    live: "#",
   },
 ];
