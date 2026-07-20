@@ -47,19 +47,6 @@ export const projects = [
     ],
   },
 
-  {
-    icon: "📊",
+  
 
-    name: "Power BI Sales Dashboard",
-
-    description:
-      "An interactive business intelligence dashboard for analyzing sales performance, regional trends, customer insights, and executive KPIs. This project will be added after completion.",
-
-    stack: [
-      "Power BI",
-      "Excel",
-      "Power Query",
-      "DAX",
-    ],
-  },
 ];
