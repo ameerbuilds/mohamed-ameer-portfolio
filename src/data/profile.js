@@ -1,3 +1,4 @@
+
 export const profile = {
   name: 'Mohamed Ameer',
 
@@ -24,26 +25,13 @@ export const profile = {
 
   linkedin: 'https://www.linkedin.com/in/mohamed-ameer2025',
 
-  // Resume file should be inside the public folder
   resume: '/Mohamed_Ameer_Resume.pdf',
 
   stats: [
-    {
-      label: 'Projects',
-      value: 5,
-    },
-    {
-      label: 'Internships',
-      value: 1,
-    },
-    {
-      label: 'Certifications',
-      value: 5,
-    },
-    {
-      label: 'Technologies',
-      value: 15,
-    },
+    { label: 'Projects', value: 3 },
+    { label: 'Internships', value: 1 },
+    { label: 'Certifications', value: 5 },
+    { label: 'Skills', value: 40 },
   ],
 
   timeline: [

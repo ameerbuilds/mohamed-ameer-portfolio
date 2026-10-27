@@ -383,3 +383,70 @@ button {
     font-size: 3.5rem !important;
   }
 }
+
+/* Balanced, readable typography */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 16px !important;
+  line-height: 1.7;
+}
+
+p,
+li {
+  line-height: 1.75;
+}
+
+/* Comfortable small text */
+.text-xs {
+  font-size: 0.8rem !important;
+  line-height: 1.5 !important;
+}
+
+.text-sm {
+  font-size: 0.9rem !important;
+  line-height: 1.6 !important;
+}
+
+.text-base {
+  font-size: 1rem !important;
+  line-height: 1.7 !important;
+}
+
+/* Balanced section headings */
+.text-lg {
+  font-size: 1.125rem !important;
+}
+
+.text-xl {
+  font-size: 1.25rem !important;
+}
+
+.text-2xl {
+  font-size: 1.5rem !important;
+}
+
+.text-3xl {
+  font-size: 1.875rem !important;
+}
+
+/* Readable form fields */
+input,
+textarea,
+select {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    font-size: 16px !important;
+  }
+}
