@@ -1,34 +1,25 @@
+
 export const experience = [
   {
-    role: "Web Development Intern",
+    role: "Computer Education Tutor",
+    company: "G-TEC Computer Education, Rajapalayam",
+    year: "Dec 2025 – Jun 2026",
 
-    company: "Motion Cut",
-
-    year: "2025",
+    certificate: "/certificates/gtec-experience.pdf",
 
     points: [
-      "Developed responsive web applications using modern frontend technologies.",
-
-      "Built reusable UI components and collaborated on MERN stack application development.",
-
-      "Worked with REST APIs, improving frontend and backend integration.",
-
-      "Used Git and GitHub for version control and collaborative development.",
-
-      "Debugged application issues and improved performance and user experience.",
+      "Conducted computer education classes and supported students in learning computer concepts.",
+      "Guided learners through practical exercises to help them apply what they learned.",
+      "Explained technical topics clearly and helped students with their learning difficulties.",
+      "Supported student progress through instruction, feedback, and practical guidance.",
     ],
 
     skills: [
-      "React.js",
-      "JavaScript",
-      "HTML5",
-      "CSS3",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "REST API",
-      "Git",
-      "GitHub",
+      "Computer Education",
+      "Practical Training",
+      "Technical Communication",
+      "Problem Solving",
+      "Student Guidance",
     ],
   },
 ];

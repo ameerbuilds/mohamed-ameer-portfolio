@@ -1,37 +1,108 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* Smooth Scrolling */
+
+/* Global typography */
 html {
   scroll-behavior: smooth;
+  font-size: 18px;
 }
 
-/* Body */
 body {
   @apply bg-ink text-bone antialiased;
   font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
   overflow-x: hidden;
 }
 
-/* Text Selection */
+/* Paragraphs and readable text */
+p,
+li {
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+/* Make small Tailwind text classes bigger globally */
+@layer utilities {
+  .text-xs {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+  }
+
+  .text-sm {
+    font-size: 1.05rem !important;
+    line-height: 1.7 !important;
+  }
+
+  .text-base {
+    font-size: 1.125rem !important;
+    line-height: 1.8 !important;
+  }
+
+  .text-lg {
+    font-size: 1.3rem !important;
+    line-height: 1.8 !important;
+  }
+
+  .text-xl {
+    font-size: 1.5rem !important;
+    line-height: 1.7 !important;
+  }
+
+  .text-2xl {
+    font-size: 1.8rem !important;
+    line-height: 1.4 !important;
+  }
+
+  .text-3xl {
+    font-size: 2.2rem !important;
+    line-height: 1.3 !important;
+  }
+
+  .text-4xl {
+    font-size: 2.7rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .text-5xl {
+    font-size: 3.2rem !important;
+    line-height: 1.15 !important;
+  }
+
+  .text-6xl {
+    font-size: 3.8rem !important;
+    line-height: 1.1 !important;
+  }
+
+  .text-7xl {
+    font-size: 4.3rem !important;
+    line-height: 1.1 !important;
+  }
+
+  .text-8xl {
+    font-size: 4.8rem !important;
+    line-height: 1.05 !important;
+  }
+}
+
+/* Text selection */
 ::selection {
   background: #3B82F6;
   color: white;
 }
 
-/*Scrollbar*/
-
-/* Firefox */
+/* Scrollbar */
 html {
   scrollbar-width: thin;
   scrollbar-color: #3B82F6 #0F172A;
 }
 
-/* Chrome, Edge, Safari */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 9px;
 }
 
 ::-webkit-scrollbar-track {
@@ -62,10 +133,9 @@ html {
 
 ::-webkit-scrollbar-corner {
   background: #0F172A;
-
 }
 
-/* Background Grid */
+/* Background grid */
 .grid-overlay {
   background-image:
     linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
@@ -73,7 +143,7 @@ html {
   background-size: 50px 50px;
 }
 
-/* Gradient Text */
+/* Gradient text */
 .text-gradient {
   background: linear-gradient(90deg, #3B82F6, #60A5FA);
   -webkit-background-clip: text;
@@ -85,8 +155,9 @@ html {
 .btn-primary {
   background: #3B82F6;
   color: white;
-  padding: 14px 30px;
+  padding: 16px 32px;
   border-radius: 12px;
+  font-size: 1.05rem;
   font-weight: 600;
   transition: all .3s ease;
   box-shadow: 0 10px 30px rgba(59,130,246,.35);
@@ -100,8 +171,9 @@ html {
 .btn-outline {
   border: 1px solid #3B82F6;
   color: #F8FAFC;
-  padding: 14px 30px;
+  padding: 16px 32px;
   border-radius: 12px;
+  font-size: 1.05rem;
   transition: all .3s ease;
 }
 
@@ -141,10 +213,173 @@ section {
   z-index: 2;
 }
 
-/* Smooth Animation */
+/* Smooth transitions */
 * {
   transition:
     background-color .3s ease,
     color .3s ease,
     border-color .3s ease;
+}
+
+/* Form readability */
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  padding: 12px;
+}
+
+/* Mobile sizing */
+@media (max-width: 640px) {
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  p,
+  li {
+    line-height: 1.75;
+  }
+
+  .text-5xl {
+    font-size: 2.6rem !important;
+  }
+
+  .text-6xl {
+    font-size: 2.9rem !important;
+  }
+
+  .text-7xl {
+    font-size: 3.2rem !important;
+  }
+
+  .text-8xl {
+    font-size: 3.5rem !important;
+  }
+}
+
+/* Extra global font-size boost */
+html {
+  font-size: 20px;
+}
+
+body {
+  font-size: 20px !important;
+  line-height: 1.85;
+}
+
+p,
+li,
+label,
+input,
+textarea,
+select,
+button {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Enlarge Tailwind text classes */
+@layer utilities {
+  .text-xs {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+  }
+
+  .text-sm {
+    font-size: 1.1rem !important;
+    line-height: 1.7 !important;
+  }
+
+  .text-base {
+    font-size: 1.2rem !important;
+    line-height: 1.8 !important;
+  }
+
+  .text-lg {
+    font-size: 1.4rem !important;
+    line-height: 1.8 !important;
+  }
+
+  .text-xl {
+    font-size: 1.6rem !important;
+    line-height: 1.7 !important;
+  }
+
+  .text-2xl {
+    font-size: 1.9rem !important;
+    line-height: 1.4 !important;
+  }
+
+  .text-3xl {
+    font-size: 2.3rem !important;
+    line-height: 1.3 !important;
+  }
+
+  .text-4xl {
+    font-size: 2.8rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .text-5xl {
+    font-size: 3.3rem !important;
+    line-height: 1.15 !important;
+  }
+
+  .text-6xl {
+    font-size: 3.9rem !important;
+    line-height: 1.1 !important;
+  }
+
+  .text-7xl {
+    font-size: 4.4rem !important;
+    line-height: 1.1 !important;
+  }
+
+  .text-8xl {
+    font-size: 4.9rem !important;
+    line-height: 1.05 !important;
+  }
+}
+
+/* Keep text readable on mobile */
+@media (max-width: 640px) {
+  html {
+    font-size: 17px;
+  }
+
+  body {
+    font-size: 17px !important;
+  }
+
+  p,
+  li,
+  label,
+  input,
+  textarea,
+  select,
+  button {
+    font-size: 1rem;
+  }
+
+  .text-5xl {
+    font-size: 2.7rem !important;
+  }
+
+  .text-6xl {
+    font-size: 3rem !important;
+  }
+
+  .text-7xl {
+    font-size: 3.3rem !important;
+  }
+
+  .text-8xl {
+    font-size: 3.5rem !important;
+  }
 }

@@ -2,3 +2,14 @@ node_modules
 dist
 .DS_Store
 .env
+/corepack
+/corepack.cmd
+/install_tools.bat
+/node.exe
+/nodevars.bat
+/npm
+/npm.cmd
+/npm.ps1
+/npx
+/npx.cmd
+/npx.ps1

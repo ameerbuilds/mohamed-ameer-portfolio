@@ -123,11 +123,11 @@ export default function Footer() {
               </h3>
 
 <div className="flex flex-col gap-3 text-muted">
-  <span>🚀 Software Development</span>
-  <span>🌐 Full Stack Engineering</span>
-  <span>☁️ Cloud Computing</span>
-  <span>🤖 Artificial Intelligence</span>
-  <span>📊 Data Analytics</span>
+  <span>🐧 Linux & System Administration</span>
+  <span>☁️ AWS Cloud Computing</span>
+  <span>⚙️ DevOps & CI/CD</span>
+  <span>🐳 Docker & Containerization</span>
+  <span>💻 Web Development with React</span>
 </div>
 
             </div>

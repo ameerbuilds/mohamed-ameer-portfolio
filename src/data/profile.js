@@ -1,21 +1,22 @@
 export const profile = {
   name: 'Mohamed Ameer',
 
-roles: [
-  'Software Engineer',
-  'MERN Stack Developer',
-  'Technical Support Engineer',
-  'Cloud Computing Enthusiast',
-],
+  roles: [
+    'Linux System Administrator',
+    'AWS Cloud Engineer',
+    'DevOps Engineer',
+    'Web Developer',
+  ],
 
   status: '🟢 Open to Full-Time Opportunities',
 
-tagline:
-  'Information Science and Engineering graduate passionate about building scalable web applications and solving real-world problems. Skilled in MERN Stack, Python, Power BI, and Cloud Computing, with a strong commitment to continuous learning and delivering high-quality software solutions.',
+  tagline:
+    'Information Science and Engineering graduate focused on Linux system administration, AWS cloud infrastructure, DevOps practices, and web development. Interested in system troubleshooting, cloud deployments, automation, and building reliable applications.',
 
-email: 'mohamedameer1296@gmail.com',
+  email: 'mohamedameer1296@gmail.com',
 
-phone: '+91-9342642958',
+  phone: '+91-9342642958',
+  whatsapp: '919342642958',
 
   location: 'Bengaluru, Karnataka, India',
 
@@ -50,31 +51,25 @@ phone: '+91-9342642958',
       year: 'Present',
       title: 'Job Preparation',
       detail:
-        'Building production-ready projects, improving React, Node.js, Cloud Computing, problem-solving, and preparing for Software Engineer roles.',
+        'Developing practical skills in Linux administration, AWS cloud infrastructure, DevOps workflows, and web development while preparing for technical roles.',
     },
-     {
+    {
       year: '2025',
       title: 'MERN Stack Certification',
       detail:
         'Completed Full Stack MERN Development and built multiple real-world projects.',
     },
-   
     {
       year: '2023',
       title: 'Web Development Intern',
       detail:
         'Motion Cut - Developed responsive web applications and strengthened frontend development skills.',
     },
-
-   
-     {
+    {
       year: '2021 - 2025',
       title: 'Bachelor of Engineering',
       detail:
         'Information Science and Engineering, New Horizon College of Engineering, Bengaluru.',
     },
-
-
-    
   ],
 };

@@ -12,18 +12,14 @@ import SectionHeading from "./SectionHeading.jsx";
 function StatCounter({ value, label }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, amount: 0.6 });
-
   const [display, setDisplay] = useState(0);
-
   const mv = useMotionValue(0);
 
   useEffect(() => {
     if (inView) {
       const controls = animate(mv, value, {
         duration: 1.2,
-        onUpdate: (latest) => {
-          setDisplay(Math.round(latest));
-        },
+        onUpdate: (latest) => setDisplay(Math.round(latest)),
       });
 
       return () => controls.stop();
@@ -48,19 +44,19 @@ function StatCounter({ value, label }) {
     <a
       href={sectionMap[label]}
       ref={ref}
-      className="group bg-panel border border-line rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:border-acid hover:shadow-[0_0_30px_rgba(59,130,246,0.25)] block cursor-pointer"
+      className="group block cursor-pointer rounded-2xl border border-line bg-panel p-6 transition-all duration-300 hover:-translate-y-2 hover:border-acid hover:shadow-[0_0_30px_rgba(59,130,246,0.25)]"
     >
-      <div className="text-3xl mb-3">{icons[label]}</div>
+      <div className="mb-3 text-3xl">{icons[label]}</div>
 
-      <div className="font-display font-bold text-5xl text-gradient">
+      <div className="font-display text-5xl font-bold text-gradient">
         {display}
       </div>
 
-      <div className="mt-2 text-muted group-hover:text-bone transition">
+      <div className="mt-2 text-muted transition group-hover:text-bone">
         {label}
       </div>
 
-      <div className="mt-4 text-xs text-acid opacity-0 group-hover:opacity-100 transition">
+      <div className="mt-4 text-xs text-acid opacity-0 transition group-hover:opacity-100">
         Click to View →
       </div>
     </a>
@@ -69,70 +65,64 @@ function StatCounter({ value, label }) {
 
 export default function About() {
   return (
-    <section
-      id="about"
-      className="py-28 max-w-6xl mx-auto px-6"
-    >
+    <section id="about" className="mx-auto max-w-6xl px-6 py-28">
       <SectionHeading
-        eyebrow="ABOUT ME"
-        title="Engineer by Training. Developer by Passion."
+        eyebrow="A LITTLE ABOUT ME"
+        title="Curious by Nature. An Engineer at Heart."
       />
 
-      <div className="grid lg:grid-cols-2 gap-16">
-
+      <div className="grid gap-16 lg:grid-cols-2">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="space-y-5 text-muted leading-8">
-
+          <div className="space-y-5 leading-8 text-muted">
             <p>
-              I am an Information Science and Engineering graduate with a
-              strong passion for software development and problem-solving.
+              I’m an Information Science and Engineering graduate who enjoys
+              figuring out how technology works behind the scenes. Whether
+              it’s understanding a Linux system, exploring cloud services, or
+              building something for the web, I like learning by getting hands-on
+              and working through problems myself.
             </p>
 
             <p>
-              I have hands-on experience building full-stack web applications
-              using the MERN Stack and creating interactive dashboards with
-              Power BI.
+              Over time, my interests have grown beyond writing code. I’ve
+              become increasingly interested in Linux administration, AWS
+              infrastructure, deployment, and the tools that help applications
+              run reliably. I’m also continuing to build on my web development
+              experience through projects and practical learning.
             </p>
 
             <p>
-              I am continuously improving my knowledge in Cloud Computing,
-              React, Node.js, and modern software engineering practices to
-              become a well-rounded Software Engineer.
+              I know there’s always more to learn, and that’s one of the things
+              I enjoy about working in technology. Right now, I’m focused on
+              strengthening my technical fundamentals, improving my
+              troubleshooting skills, and gaining the kind of hands-on
+              experience that comes from solving real problems. I’m looking
+              forward to starting my career, contributing to a team, and
+              growing into a dependable IT professional.
             </p>
-
           </div>
 
-          <div className="mt-12 border-l-2 border-line pl-6 space-y-8">
-
+          <div className="mt-12 space-y-8 border-l-2 border-line pl-6">
             {profile.timeline.map((item) => (
-
               <div key={item.title} className="relative">
+                <span className="absolute -left-[33px] top-1 h-4 w-4 rounded-full bg-acid" />
 
-                <span className="absolute -left-[33px] top-1 w-4 h-4 rounded-full bg-acid"></span>
-
-                <div className="text-acid text-sm font-semibold">
+                <div className="text-sm font-semibold text-acid">
                   {item.year}
                 </div>
 
-                <div className="text-lg font-semibold mt-1">
+                <div className="mt-1 text-lg font-semibold">
                   {item.title}
                 </div>
 
-                <p className="text-muted mt-1">
-                  {item.detail}
-                </p>
-
+                <p className="mt-1 text-muted">{item.detail}</p>
               </div>
-
             ))}
-
           </div>
-
         </motion.div>
 
         <motion.div
@@ -142,19 +132,14 @@ export default function About() {
           transition={{ duration: 0.6 }}
           className="grid grid-cols-2 gap-6"
         >
-
           {profile.stats.map((item) => (
-
             <StatCounter
               key={item.label}
               value={item.value}
               label={item.label}
             />
-
           ))}
-
         </motion.div>
-
       </div>
     </section>
   );

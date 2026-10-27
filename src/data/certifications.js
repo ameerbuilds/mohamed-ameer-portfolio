@@ -3,14 +3,14 @@ export const certifications = [
     name: "MERN Stack Development",
     issuer: "Livewire",
     description:
-      "Completed comprehensive Full Stack MERN Development training covering frontend and backend application development using modern web technologies.",
+      "Completed training in full-stack web development, exploring how to build user interfaces with React and connect them to backend services and databases.",
     skills: [
       "React.js",
       "Node.js",
       "Express.js",
       "MongoDB",
       "JavaScript",
-      "REST API",
+      "REST APIs",
     ],
     link: "/certificates/mern-stack-development.pdf",
   },
@@ -19,7 +19,7 @@ export const certifications = [
     name: "Power BI",
     issuer: "Office Master",
     description:
-      "Learned to build interactive dashboards, analyze business data, create reports, and visualize insights using Microsoft Power BI.",
+      "Gained experience with data visualization and reporting, including creating interactive dashboards and presenting data in a way that is easier to understand.",
     skills: [
       "Power BI",
       "Excel",
@@ -34,11 +34,11 @@ export const certifications = [
     name: "Artificial Intelligence",
     issuer: "Accenture",
     description:
-      "Completed a certification in Artificial Intelligence covering AI fundamentals, machine learning concepts, and practical applications.",
+      "Completed AI-related learning covering foundational concepts and exploring how artificial intelligence can be applied to practical problems.",
     skills: [
       "Artificial Intelligence",
-      "Machine Learning",
       "AI Fundamentals",
+      "Machine Learning Concepts",
       "Problem Solving",
     ],
     link: "/certificates/artificial-intelligence_certificate.pdf",
@@ -48,7 +48,7 @@ export const certifications = [
     name: "Certified LLM Security Expert (CLLMSE)",
     issuer: "Red Team Leaders",
     description:
-      "Completed certification focused on Large Language Model (LLM) security, prompt injection, AI threats, secure AI deployment, and best practices for protecting AI systems.",
+      "Completed training focused on security considerations for large language models, including prompt injection, potential AI threats, and approaches to protecting AI-powered applications.",
     skills: [
       "LLM Security",
       "AI Security",
@@ -63,11 +63,11 @@ export const certifications = [
     name: "Skill Enhancement",
     issuer: "Visvesvaraya Technological University (VTU)",
     description:
-      "Successfully completed the university skill enhancement program focused on practical technical and professional development.",
+      "Completed a university skill enhancement program as part of my ongoing technical and professional development.",
     skills: [
+      "Technical Development",
       "Problem Solving",
       "Programming",
-      "Communication",
       "Professional Skills",
     ],
     link: "/certificates/vtu-certificate.pdf",

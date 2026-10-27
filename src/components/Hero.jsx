@@ -9,14 +9,14 @@ export default function Hero() {
   const role = useTypewriter(profile.roles);
 
   const techStack = [
-    "React",
-    "Node.js",
-    "MongoDB",
-    "Python",
-    "Power BI",
-    "Git",
-    "AWS",
-  ];
+  "Red Hat Linux",
+  "AWS",
+  "Git & GitHub",
+  "Docker",
+  "CI/CD",
+  "React",
+  "RHEL Migration",
+];
 
   return (
     <section

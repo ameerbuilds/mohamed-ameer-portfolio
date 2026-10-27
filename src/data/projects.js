@@ -1,28 +1,24 @@
 export const projects = [
   {
     icon: "🚀",
-
     name: "Developer Portfolio",
-
     description:
-      "A modern and responsive personal portfolio built using React, Tailwind CSS, and Framer Motion. It showcases my projects, skills, certifications, experience, and contact information with smooth animations and a professional UI.",
-
+      "I built this portfolio to bring my projects, technical skills, and learning journey together in one place. It features a responsive layout, animated interactions, an interactive terminal, and a contact form so visitors can learn more about my work and get in touch.",
     stack: [
       "React",
       "Tailwind CSS",
       "Framer Motion",
       "JavaScript",
+      "Vite",
+      "EmailJS",
     ],
   },
 
   {
     icon: "🛒",
-
     name: "E-Commerce Website",
-
     description:
-      "A full-stack MERN e-commerce application featuring user authentication, product management, shopping cart functionality, order processing, and an admin dashboard for inventory management.",
-
+      "A full-stack shopping application designed to cover the main steps of an online purchase, from browsing products to managing a cart and placing orders. The project helped me explore how a React frontend connects with a backend and database to support an e-commerce workflow.",
     stack: [
       "MongoDB",
       "Express.js",
@@ -33,12 +29,9 @@ export const projects = [
 
   {
     icon: "🍔",
-
     name: "Online Food Ordering System",
-
     description:
-      "A restaurant ordering system developed in C featuring menu management, order processing, inventory tracking, and file-based data storage with a console-based user interface.",
-
+      "A console-based food ordering system built in C around a simple restaurant ordering workflow. It focuses on handling menu items and orders, organizing data, and storing information in files. Working on this project helped me practise core programming concepts and structured data handling.",
     stack: [
       "C Programming",
       "Data Structures",
@@ -46,7 +39,4 @@ export const projects = [
       "Windows API",
     ],
   },
-
-  
-
 ];
