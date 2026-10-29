@@ -28,7 +28,7 @@ export const profile = {
   resume: '/Mohamed_Ameer_Resume.pdf',
 
   stats: [
-    { label: 'Projects', value: 3 },
+    { label: 'Projects', value: 5 },
     { label: 'Internships', value: 1 },
     { label: 'Certifications', value: 5 },
     { label: 'Skills', value: 40 },

@@ -8,12 +8,11 @@ export default function Projects() {
       id="projects"
       className="py-28 max-w-7xl mx-auto px-6"
     >
-      <SectionHeading
-        eyebrow="PROJECTS"
-        title="Featured Projects"
-        subtitle="Projects that demonstrate my software development, problem-solving, and full-stack engineering skills."
-      />
-
+<SectionHeading
+  eyebrow="PROJECTS"
+  title="Featured Projects"
+  subtitle="Projects showcasing my practical experience in Linux administration, cloud infrastructure, monitoring, deployment, and web development."
+/>
       <div className="grid lg:grid-cols-2 gap-8">
         {projects.map((project, index) => (
           <motion.div

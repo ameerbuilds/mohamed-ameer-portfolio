@@ -1,4 +1,35 @@
+
 export const projects = [
+  {
+    icon: "🐧",
+    name: "Linux Server Health Monitoring and Auto-Recovery System",
+    description:
+      "Developed a Linux server monitoring project to check memory and disk usage, record system health information in log files, and schedule recurring checks using systemd services and timers. Tested service-failure scenarios and verified recovery behavior through system logs.",
+    stack: [
+      "Linux",
+      "systemd",
+      "systemd Timers",
+      "Service Monitoring",
+      "Log Analysis",
+    ],
+  },
+  
+
+{
+  icon: "🔄",
+  name: "RHEL 8 to RHEL 9 Migration",
+  description:
+  "Practised the RHEL 8 to RHEL 9 migration process, focusing on migration prerequisites, system compatibility checks, and post-migration verification.",
+  stack: [
+    "RHEL 8",
+    "RHEL 9",
+    "Linux Administration",
+    "System Migration",
+    "Troubleshooting",
+  ],
+},
+
+
   {
     icon: "🚀",
     name: "Developer Portfolio",
